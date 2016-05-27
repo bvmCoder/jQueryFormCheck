@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js" type="text/javascript"></script>
+    <script src="./js/jqueryFormCheck.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <form action="#" class="formCheck" id="formCheck" method="get">
+        <fieldset>
+            <legend>A Simple HTML Form</legend>
+            <p>
+                <label for="firstName">* First name</label>
+                <input id="firstName" name="firstName" class="required" />
+            </p>
+            <p>
+                <label for="lastName">&nbsp; &nbsp;Last name</label>
+                <input id="lastName" name="lastName" />
+            </p>
+            <p>
+                <label for="email">* Email</label>
+                <input id="email" name="email" class="required email" />
+            </p>
+            <p>
+                <label for="comment">* Comment</label>
+                <textarea id="comment" name="comment" class="required">
+                </textarea>
+            </p>
+            <p>
+                <input class="submit" type="submit" value="Submit" />
+            </p>
+        </fieldset>
+    </form>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.formCheck').formCheck();
+    })
+    </script>
+</body>
+
+</html>
